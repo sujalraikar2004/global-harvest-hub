@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Package, Clock, CalendarCheck } from "lucide-react";
+import { MapPin, Package, Clock, FlaskConical } from "lucide-react";
 import Layout from "@/components/Layout";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { products, categories, type ProductCategory } from "@/data/products";
@@ -19,10 +19,10 @@ const Products = () => {
               Our Products
             </span>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 max-w-3xl">
-              Premium Export-Grade Vegetables
+              Premium Export-Grade Indian Spices
             </h1>
             <p className="text-base md:text-lg text-primary-foreground/80 max-w-2xl">
-              Sourced directly from India's finest farms. Quality-inspected, professionally packed, and ready for global markets.
+              Sourced directly from India's finest spice-growing regions. Lab-tested, professionally graded, and ready for European and global markets.
             </p>
           </ScrollReveal>
         </div>
@@ -76,12 +76,12 @@ const Products = () => {
                         <span className="line-clamp-1">{product.packaging}</span>
                       </div>
                       <div className="flex items-center gap-1.5 md:gap-2">
-                        <Clock className="h-3 w-3 md:h-3.5 md:w-3.5 text-primary shrink-0" />
-                        <span className="line-clamp-1">Shelf Life: {product.shelfLife}</span>
+                        <FlaskConical className="h-3 w-3 md:h-3.5 md:w-3.5 text-primary shrink-0" />
+                        <span className="line-clamp-1">Purity: {product.purity}</span>
                       </div>
                       <div className="flex items-center gap-1.5 md:gap-2">
-                        <CalendarCheck className="h-3 w-3 md:h-3.5 md:w-3.5 text-primary shrink-0" />
-                        <span className="line-clamp-1">{product.availability}</span>
+                        <Clock className="h-3 w-3 md:h-3.5 md:w-3.5 text-primary shrink-0" />
+                        <span className="line-clamp-1">Shelf Life: {product.shelfLife}</span>
                       </div>
                     </div>
                   </div>

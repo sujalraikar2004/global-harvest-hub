@@ -1,4 +1,4 @@
-import { ShieldCheck, Award, Leaf, FileCheck, Bug, ArrowRight } from "lucide-react";
+import { ShieldCheck, FlaskConical, AlertTriangle, Microscope, FileCheck, Leaf, ArrowRight, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
@@ -7,40 +7,44 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 const certifications = [
   {
     icon: ShieldCheck,
-    name: "ISO 22000:2018",
-    full: "Food Safety Management System",
-    desc: "Internationally recognized standard ensuring our food safety management system meets the highest global benchmarks for safe food production and handling.",
+    name: "EU Maximum Residue Limits (MRL)",
+    full: "Pesticide Residue Compliance",
+    desc: "All spice shipments are tested against EU MRL regulations for pesticide residues. Non-compliant batches are rejected before export. Full test reports available.",
   },
   {
-    icon: Award,
-    name: "APEDA Registered",
-    full: "Agricultural & Processed Food Products Export Development Authority",
-    desc: "Official registration with India's apex export promotion body for agricultural products, ensuring compliance with all export regulations.",
+    icon: AlertTriangle,
+    name: "Aflatoxin & Mycotoxin Control",
+    full: "EU Contaminant Regulation (EC) No 1881/2006",
+    desc: "Strict Aflatoxin B1, B2, G1, G2 and Ochratoxin A testing in line with EU maximum limits for spices. Accredited lab certificates provided with each shipment.",
   },
   {
-    icon: Leaf,
-    name: "Global G.A.P.",
-    full: "Good Agricultural Practices",
-    desc: "Certification confirming that our sourcing farms follow responsible agricultural practices covering food safety, sustainability, and worker welfare.",
+    icon: FlaskConical,
+    name: "Heavy Metal Limits",
+    full: "Lead, Cadmium & Other Contaminants",
+    desc: "Testing for heavy metal contaminants including Lead (Pb), Cadmium (Cd), and Mercury (Hg) to meet EU food safety regulations for spices and dried herbs.",
+  },
+  {
+    icon: Microscope,
+    name: "Microbiological Safety Standards",
+    full: "E. coli, Salmonella & Yeast/Mold",
+    desc: "Rigorous microbiological testing confirming absence of Salmonella (in 25g), E. coli, and Yeast & Mold within EU permissible limits before any shipment is cleared.",
   },
   {
     icon: FileCheck,
-    name: "FSSAI Licensed",
-    full: "Food Safety and Standards Authority of India",
-    desc: "Licensed by India's food safety regulatory body, ensuring all products meet national food safety and quality standards before export.",
+    name: "Certificate of Analysis (COA)",
+    full: "Accredited Laboratory Testing",
+    desc: "A Certificate of Analysis from accredited laboratories is available upon request for every shipment, covering all physical, chemical, and microbiological parameters.",
   },
   {
-    icon: Bug,
-    name: "HACCP Certified",
-    full: "Hazard Analysis & Critical Control Points",
-    desc: "Systematic preventive approach to food safety that addresses physical, chemical, and biological hazards in our production and supply chain.",
-  },
-  {
-    icon: ShieldCheck,
+    icon: Leaf,
     name: "Phytosanitary Compliance",
     full: "Plant Health & Quarantine Standards",
-    desc: "Full compliance with international phytosanitary requirements, with certified pest-free and fumigation documentation for every shipment.",
+    desc: "Full compliance with international phytosanitary requirements. Phytosanitary certificates, fumigation certificates, and health certificates issued for every export.",
   },
+];
+    icon: Leaf,
+    name: "Global G.A.P.",
+    full: "Good Agricultural Practices",
 ];
 
 const Certifications = () => (
@@ -53,10 +57,10 @@ const Certifications = () => (
             Quality Standards
           </span>
           <h1 className="section-title text-primary-foreground mb-4 max-w-3xl">
-            Certifications & Quality Assurance
+            EU Compliance & Quality Standards
           </h1>
           <p className="text-lg text-primary-foreground/70 max-w-2xl">
-            Every product we export is backed by internationally recognized certifications and rigorous quality protocols.
+            Every spice shipment from NITARA GLOBAL meets EU food safety regulations, backed by accredited lab testing and full documentation.
           </p>
         </ScrollReveal>
       </div>
@@ -92,16 +96,28 @@ const Certifications = () => (
             </div>
             <h2 className="section-title text-2xl md:text-3xl mb-4">Our Quality Commitment</h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Quality isn't just a department — it's woven into every step of our process. From farm audits and
-              pre-harvest inspections to post-harvest quality checks and cold chain monitoring, we ensure that
-              every vegetable leaving our facility meets the exacting standards of international buyers. Our
-              dedicated quality team conducts over 20 checkpoints before any shipment is cleared for export.
+              At NITARA GLOBAL, quality is embedded in every step of our process. From sourcing and cleaning
+              to grading and packaging, we ensure every spice shipment meets strict EU food safety standards.
+              Our dedicated quality team coordinates accredited lab testing, and a Certificate of Analysis (COA)
+              is available upon request for every shipment we dispatch.
             </p>
-            <Button asChild size="lg" className="px-8">
-              <Link to="/contact">
-                Request Quality Report <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button asChild size="lg" className="px-8">
+                <Link to="/contact">
+                  Request COA / Quality Report <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="px-8 gap-2">
+                <a
+                  href="https://drive.google.com/file/d/1cmnHdIFfAwiLLF05grNvYDr4WT84AGzw/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ExternalLink className="h-4 w-4" />
+                  View GST Certificate
+                </a>
+              </Button>
+            </div>
           </div>
         </ScrollReveal>
       </div>

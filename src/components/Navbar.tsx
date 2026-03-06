@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, Leaf } from "lucide-react";
+import { Menu, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -14,8 +14,6 @@ const navLinks = [
   { to: "/about", label: "About Us" },
   { to: "/products", label: "Products" },
   { to: "/services", label: "Services" },
-  { to: "/countries", label: "Countries" },
-  { to: "/certifications", label: "Certifications" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -41,9 +39,9 @@ export default function Navbar() {
       <div className="container flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <Link to="/" className={`flex items-center gap-2 ${textColor}`}>
-          <Leaf className="h-7 w-7 text-primary" />
+          <Flame className="h-7 w-7 text-primary" />
           <span className="text-xl font-heading font-bold">
-            Fresh<span className="text-primary">Fields</span>
+            NITARA <span className="text-primary">GLOBAL</span>
           </span>
         </Link>
 
@@ -82,8 +80,8 @@ export default function Navbar() {
           </SheetTrigger>
           <SheetContent side="right" className="w-72">
             <SheetTitle className="flex items-center gap-2 mb-6">
-              <Leaf className="h-5 w-5 text-primary" />
-              <span className="font-heading font-bold">FreshFields</span>
+              <Flame className="h-5 w-5 text-primary" />
+              <span className="font-heading font-bold">NITARA GLOBAL</span>
             </SheetTitle>
             <nav className="flex flex-col gap-1">
               {navLinks.map((link) => (

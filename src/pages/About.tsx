@@ -6,21 +6,19 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import aboutImage from "@/assets/about-warehouse.jpg";
 
 const milestones = [
-  { year: "2013", text: "Founded in Navi Mumbai with a vision to connect Indian farmers with global markets." },
-  { year: "2015", text: "First international shipment to the UAE — 200 tons of premium onions and potatoes." },
-  { year: "2017", text: "Expanded operations to 10+ countries across the Middle East and Southeast Asia." },
-  { year: "2019", text: "Achieved ISO 22000 certification and launched organic vegetable export division." },
-  { year: "2021", text: "Opened cold storage facilities in Gujarat and Maharashtra with 5,000 MT capacity." },
-  { year: "2024", text: "Serving 25+ countries with an annual export volume exceeding 50,000 metric tons." },
+  { year: "2020", text: "NITARA GLOBAL founded by Disha Vinayak Hattikatti with a vision to export premium Indian spices to global markets." },
+  { year: "2022", text: "First European shipments dispatched — cumin, coriander, and turmeric to buyers in the UK and Netherlands." },
+  { year: "2023", text: "Expanded product range to 9 core spices; established accredited lab testing partnerships for EU MRL compliance." },
+  { year: "2024", text: "Serving 15+ countries with consistent bulk shipments and full EU food safety documentation support." },
 ];
 
 const reasons = [
-  "Direct farm-to-port sourcing with complete traceability",
-  "State-of-the-art cold chain infrastructure",
-  "Dedicated quality inspection at every stage",
-  "Competitive pricing with flexible packaging options",
-  "24/7 logistics tracking and customer support",
-  "Full compliance with international food safety standards",
+  "Direct sourcing from India's premier spice-growing regions",
+  "Full EU MRL and Aflatoxin compliance on every shipment",
+  "Modern cleaning and grading systems for consistent purity",
+  "COA from accredited laboratories available upon request",
+  "Hygienic processing meeting EU microbiological standards",
+  "Flexible bulk packaging with private label options",
 ];
 
 const About = () => (
@@ -33,10 +31,10 @@ const About = () => (
             About Us
           </span>
           <h1 className="section-title text-primary-foreground mb-4 max-w-3xl">
-            A Decade of Delivering Freshness Across the Globe
+            Authentic Indian Spices, Delivered to the World
           </h1>
           <p className="text-lg text-primary-foreground/70 max-w-2xl">
-            From humble beginnings in Mumbai's APMC market to becoming a trusted name in global vegetable trade.
+            From India's richest spice-growing regions to dinner tables across Europe and beyond.
           </p>
         </ScrollReveal>
       </div>
@@ -48,7 +46,7 @@ const About = () => (
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <ScrollReveal direction="left">
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img src={aboutImage} alt="FreshFields warehouse operations" className="w-full h-full object-cover" />
+              <img src={aboutImage} alt="NITARA GLOBAL warehouse operations" className="w-full h-full object-cover" />
             </div>
           </ScrollReveal>
           <ScrollReveal direction="right">
@@ -56,19 +54,21 @@ const About = () => (
               Our <span className="text-primary">Story</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              FreshFields Global was founded in 2013 by a team of agricultural trade professionals who saw an
-              opportunity to bridge the gap between India's abundant farming regions and the growing demand for
-              quality vegetables in international markets.
+              NITARA GLOBAL was founded in 2020 by Disha Vinayak Hattikatti with a clear purpose — to bring India's
+              finest spices to European and international markets with the quality, purity, and reliability that
+              global buyers demand.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Starting with just onion and potato exports to the UAE, we have steadily grown into a full-service
-              import-export company handling over 50,000 metric tons of fresh and organic vegetables annually.
-              Our network now spans 25+ countries across the Middle East, Europe, Asia, and Africa.
+              Starting with core spices like cumin, coriander, and turmeric, we have built strong sourcing networks
+              across India's premier spice belts — Rajasthan, Gujarat, Andhra Pradesh, Kerala, and beyond. Our
+              modern cleaning and grading systems ensure every batch meets precise specifications for aroma,
+              color, flavor, and purity.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              We take pride in our farm-to-fork traceability, ensuring every vegetable we export meets the
-              highest standards of quality, hygiene, and freshness. Our success is built on trust, consistency,
-              and a relentless commitment to our partners worldwide.
+              We pride ourselves on full EU food safety compliance — including MRL testing, Aflatoxin and
+              Mycotoxin controls, Heavy Metal limits, and Microbiological standards — backed by COA documentation
+              from accredited laboratories. Our success is built on trust, consistency, and a relentless
+              commitment to our global partners.
             </p>
           </ScrollReveal>
         </div>
@@ -86,9 +86,8 @@ const About = () => (
               </div>
               <h3 className="font-heading text-2xl font-bold mb-4">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed">
-                To become the most trusted vegetable sourcing partner for importers and distributors worldwide,
-                setting benchmarks in quality, sustainability, and operational excellence in the global fresh
-                produce trade industry.
+                To become a globally recognized and trusted spice export company known for reliability,
+                compliance, and excellence in every shipment we dispatch.
               </p>
             </div>
           </ScrollReveal>
@@ -99,9 +98,9 @@ const About = () => (
               </div>
               <h3 className="font-heading text-2xl font-bold mb-4">Our Mission</h3>
               <p className="text-muted-foreground leading-relaxed">
-                To deliver farm-fresh, quality-inspected vegetables to every corner of the world through
-                sustainable sourcing practices, advanced cold chain logistics, and an unwavering commitment
-                to food safety and customer satisfaction.
+                To deliver authentic, high-quality Indian spices that meet international standards while
+                building long-term partnerships with global buyers through transparency, consistency, and
+                unwavering commitment to food safety.
               </p>
             </div>
           </ScrollReveal>
@@ -114,7 +113,7 @@ const About = () => (
       <div className="container">
         <ScrollReveal className="text-center mb-16">
           <h2 className="section-title mb-4">Our Journey</h2>
-          <p className="section-subtitle mx-auto">Key milestones that shaped FreshFields Global.</p>
+          <p className="section-subtitle mx-auto">Key milestones that shaped NITARA GLOBAL.</p>
         </ScrollReveal>
         <div className="max-w-3xl mx-auto space-y-0">
           {milestones.map((m, i) => (
@@ -143,7 +142,7 @@ const About = () => (
     <section className="section-padding gradient-green text-primary-foreground">
       <div className="container">
         <ScrollReveal className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose FreshFields Global?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose NITARA GLOBAL?</h2>
         </ScrollReveal>
         <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
           {reasons.map((r, i) => (

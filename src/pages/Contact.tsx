@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import { Phone, Mail, Clock, Send, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -9,24 +9,28 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 
 const contactInfo = [
   {
-    icon: MapPin,
-    title: "Head Office",
-    lines: ["Plot 42, APMC Market, Vashi", "Navi Mumbai, Maharashtra 400703", "India"],
-  },
-  {
     icon: Phone,
-    title: "Phone",
-    lines: ["+91 22 2784 5600", "+91 98765 43210 (WhatsApp)"],
+    title: "Phone / WhatsApp",
+    lines: ["+91 99001 68682"],
+    href: "https://wa.me/919900168682",
   },
   {
     icon: Mail,
     title: "Email",
-    lines: ["info@freshfieldsglobal.com", "exports@freshfieldsglobal.com"],
+    lines: ["Nitaraglobals@gmail.com"],
+    href: "mailto:Nitaraglobals@gmail.com",
   },
   {
     icon: Clock,
     title: "Business Hours",
     lines: ["Monday – Saturday", "9:00 AM – 6:00 PM IST"],
+    href: null,
+  },
+  {
+    icon: ExternalLink,
+    title: "GST Certificate",
+    lines: ["Click to view our GST Registration Certificate"],
+    href: "https://drive.google.com/file/d/1cmnHdIFfAwiLLF05grNvYDr4WT84AGzw/view?usp=drive_link",
   },
 ];
 
@@ -38,7 +42,7 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
-      description: "Thank you for reaching out. Our team will get back to you within 24 hours.",
+      description: "Thank you for your enquiry. Our team will get back to you within 24 hours.",
     });
     setForm({ name: "", email: "", country: "", message: "" });
   };
@@ -56,10 +60,10 @@ const Contact = () => {
               Get In Touch
             </span>
             <h1 className="section-title text-primary-foreground mb-4 max-w-3xl">
-              Let's Grow Your Business Globally
+              Let's Build a Lasting Spice Trade Partnership
             </h1>
             <p className="text-lg text-primary-foreground/70 max-w-2xl">
-              Whether you're looking to import or export premium vegetables, we'd love to hear from you.
+              Looking to source premium Indian spices for your market? We'd love to hear from you.
             </p>
           </ScrollReveal>
         </div>
@@ -114,7 +118,7 @@ const Contact = () => {
                     <Textarea
                       required
                       rows={5}
-                      placeholder="Tell us about your requirements — products, quantities, delivery timeline..."
+                      placeholder="Tell us about your spice requirements — products, quantities (MT), packaging, and delivery destination..."
                       value={form.message}
                       onChange={update("message")}
                       maxLength={1000}
@@ -138,24 +142,40 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="font-heading font-semibold text-sm mb-1">{info.title}</h4>
-                        {info.lines.map((line) => (
-                          <p key={line} className="text-sm text-muted-foreground">{line}</p>
-                        ))}
+                        {info.href ? (
+                          info.title === "GST Certificate" ? (
+                            <a
+                              href={info.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-sm text-primary hover:underline"
+                            >
+                              {info.lines[0]}
+                            </a>
+                          ) : (
+                            <a href={info.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                              {info.lines[0]}
+                            </a>
+                          )
+                        ) : (
+                          info.lines.map((line) => (
+                            <p key={line} className="text-sm text-muted-foreground">{line}</p>
+                          ))
+                        )}
                       </div>
                     </div>
                   ))}
                 </div>
               </ScrollReveal>
 
-              {/* Map Placeholder */}
               <ScrollReveal delay={0.3} className="mt-6">
-                <div className="bg-muted rounded-xl overflow-hidden border border-border aspect-video flex items-center justify-center">
-                  <div className="text-center p-6">
-                    <MapPin className="h-10 w-10 text-primary mx-auto mb-3" />
-                    <p className="text-sm text-muted-foreground font-medium">
-                      APMC Market, Vashi<br />Navi Mumbai, India
-                    </p>
-                  </div>
+                <div className="bg-muted rounded-xl overflow-hidden border border-border p-6 flex flex-col items-center text-center gap-3">
+                  <Mail className="h-10 w-10 text-primary" />
+                  <p className="text-sm text-muted-foreground font-medium">
+                    NITARA GLOBAL<br />
+                    Premium Indian Spice Exporter<br />
+                    <span className="text-primary font-semibold">Purity | Quality | Reliability</span>
+                  </p>
                 </div>
               </ScrollReveal>
             </div>

@@ -10,8 +10,6 @@ import NotFound from "./pages/NotFound";
 const About = lazy(() => import("./pages/About"));
 const Products = lazy(() => import("./pages/Products"));
 const Services = lazy(() => import("./pages/Services"));
-const Countries = lazy(() => import("./pages/Countries"));
-const Certifications = lazy(() => import("./pages/Certifications"));
 const Contact = lazy(() => import("./pages/Contact"));
 
 const queryClient = new QueryClient();
@@ -34,8 +32,6 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/countries" element={<Countries />} />
-            <Route path="/certifications" element={<Certifications />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

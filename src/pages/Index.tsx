@@ -8,39 +8,39 @@ import heroImage from "@/assets/hero-vegetables.jpg";
 import { motion } from "framer-motion";
 
 const trustBadges = [
-  { icon: Shield, label: "ISO Certified" },
+  { icon: Shield, label: "EU Compliant" },
   { icon: Truck, label: "Global Shipping" },
-  { icon: Award, label: "Quality Assured" },
+  { icon: Award, label: "Lab Tested" },
 ];
 
 const whyUs = [
   {
     icon: Leaf,
-    title: "Farm-Fresh Quality",
-    desc: "Direct sourcing from certified farms ensures the freshest produce reaches your doorstep.",
+    title: "Strong Sourcing Network",
+    desc: "Direct sourcing from India's finest spice-growing regions ensures consistent quality in every shipment.",
   },
   {
-    icon: Truck,
-    title: "Cold Chain Logistics",
-    desc: "End-to-end temperature-controlled supply chain preserving freshness across continents.",
+    icon: Shield,
+    title: "EU MRL Compliance",
+    desc: "Full compliance with European Union Maximum Residue Limits, Aflatoxin, Heavy Metal, and Microbiological standards.",
   },
   {
     icon: Globe,
-    title: "25+ Countries Served",
-    desc: "A robust distribution network spanning the Middle East, Europe, Asia, and beyond.",
+    title: "Modern Grading Systems",
+    desc: "State-of-the-art cleaning and grading equipment delivering consistent color, aroma, and purity specifications.",
   },
   {
     icon: Award,
-    title: "Certified Standards",
-    desc: "ISO 22000, Global GAP, and APEDA certified operations for uncompromised safety.",
+    title: "Consistent Aroma & Purity",
+    desc: "Rigorous quality checks at every stage ensuring uniform flavor, purity, and freshness across all batches.",
   },
 ];
 
 const stats = [
-  { value: "10+", label: "Years of Experience" },
-  { value: "25+", label: "Countries Served" },
-  { value: "1,200+", label: "Happy Clients" },
-  { value: "50K+", label: "Tons Exported Annually" },
+  { value: "3+", label: "Years of Experience" },
+  { value: "15+", label: "Countries Served" },
+  { value: "500+", label: "Happy Clients" },
+  { value: "5K+", label: "Tons Exported Annually" },
 ];
 
 const Index = () => {
@@ -51,7 +51,7 @@ const Index = () => {
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImage} alt="Fresh vegetables for export" className="w-full h-full object-cover object-center md:scale-105" />
+          <img src={heroImage} alt="Premium Indian spices for export" className="w-full h-full object-cover object-center md:scale-105" />
           <div className="absolute inset-0 bg-gradient-to-r from-[hsl(150,30%,5%)]/95 via-[hsl(150,30%,8%)]/85 to-[hsl(150,30%,5%)]/70 md:to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-[hsl(150,30%,5%)]/80 via-[hsl(150,30%,5%)]/40 to-[hsl(150,30%,5%)]/50 md:via-transparent md:to-[hsl(150,30%,5%)]/30" />
         </div>
@@ -69,7 +69,7 @@ const Index = () => {
             >
               <span className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 rounded-full bg-primary/30 text-white text-xs md:text-sm font-semibold mb-4 md:mb-6 border border-primary/40 backdrop-blur-md">
                 <Sparkles className="h-3 w-3 md:h-3.5 md:w-3.5" />
-                Trusted Since 2013
+                Trusted Since 2020
               </span>
             </motion.div>
             <motion.h1
@@ -78,8 +78,8 @@ const Index = () => {
               transition={{ duration: 0.7, delay: 0.15 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-6xl font-extrabold text-white leading-[1.15] mb-4 md:mb-6"
             >
-              Fresh Vegetables Exported Worldwide with{" "}
-              <span className="text-shimmer">Trust & Quality</span>
+              Premium Indian Spices Exported with{" "}
+              <span className="text-shimmer">Purity & Reliability</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -87,8 +87,8 @@ const Index = () => {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="text-base md:text-lg lg:text-xl text-white/90 mb-6 md:mb-10 leading-relaxed max-w-xl"
             >
-              Reliable import & export solutions connecting farmers to global markets.
-              Premium quality, competitive pricing, and seamless logistics.
+              Authentic Indian spices for European and global markets.
+              Strict EU compliance, hygienic processing, and consistent quality in every shipment.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -135,11 +135,11 @@ const Index = () => {
               Why Us
             </span>
             <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">
-              Why Choose <span className="text-primary">FreshFields Global</span>
+              Why Choose <span className="text-primary">NITARA GLOBAL</span>
             </h2>
             <p className="text-sm md:text-base lg:text-lg xl:text-xl text-muted-foreground mx-auto max-w-2xl">
-              We combine agricultural expertise with world-class logistics to deliver
-              the freshest vegetables to markets worldwide.
+              We combine deep sourcing expertise with strict quality control to deliver
+              the finest Indian spices to markets worldwide.
             </p>
           </ScrollReveal>
 
@@ -166,9 +166,9 @@ const Index = () => {
             <span className="inline-block px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-4">
               Our Range
             </span>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">Our Premium Products</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">Our Premium Spice Range</h2>
             <p className="text-sm md:text-base lg:text-lg xl:text-xl text-muted-foreground mx-auto max-w-2xl">
-              Hand-picked, quality-inspected vegetables ready for international markets.
+              Hand-graded, lab-tested spices sourced from India's finest growing regions, ready for international markets.
             </p>
           </ScrollReveal>
 
@@ -214,7 +214,7 @@ const Index = () => {
         <div className="container relative z-10 text-primary-foreground px-4">
           <ScrollReveal className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Our Impact in Numbers</h2>
-            <p className="text-base md:text-lg opacity-80">A decade of delivering excellence across continents</p>
+            <p className="text-base md:text-lg opacity-80">Delivering excellence across continents since 2020</p>
           </ScrollReveal>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {stats.map((stat, i) => (
@@ -251,7 +251,7 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed">
-                  "Outstanding quality and timely delivery. FreshFields Global has become our trusted partner for all vegetable imports. Their cold chain logistics are exceptional!"
+                  "Outstanding quality and timely delivery. NITARA GLOBAL has become our trusted partner for spice imports. Their EU compliance documentation is impeccable!"
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">
@@ -259,7 +259,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-sm md:text-base">Mohammed Khalid</h4>
-                    <p className="text-xs md:text-sm text-muted-foreground">Dubai Trading Co.</p>
+                    <p className="text-xs md:text-sm text-muted-foreground">Dubai Spice Trading Co.</p>
                   </div>
                 </div>
               </div>
@@ -273,7 +273,7 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed">
-                  "We've been working with FreshFields for 3 years. Their commitment to quality and competitive pricing makes them stand out in the market."
+                  "We've been sourcing cumin and coriander from NITARA GLOBAL for 2 years. Their purity levels and competitive pricing are unmatched in the European market."
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">
@@ -281,7 +281,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-sm md:text-base">Sarah Peterson</h4>
-                    <p className="text-xs md:text-sm text-muted-foreground">European Foods Ltd.</p>
+                    <p className="text-xs md:text-sm text-muted-foreground">European Spice Imports Ltd.</p>
                   </div>
                 </div>
               </div>
@@ -295,7 +295,7 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed">
-                  "Reliable, professional, and always delivering fresh produce. Their certification standards give us confidence in every shipment."
+                  "Reliable, professional, and always delivering to spec. Their COA reports and phytosanitary certificates save us significant compliance work."
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">
@@ -319,9 +319,9 @@ const Index = () => {
             <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
               Our Process
             </span>
-            <h2 className="section-title mb-4">From Farm to Your Doorstep</h2>
+            <h2 className="section-title mb-4">From Source to Shipment</h2>
             <p className="section-subtitle mx-auto">
-              A seamless four-step process ensuring premium quality at every stage
+              A seamless four-step process ensuring premium spice quality at every stage
             </p>
           </ScrollReveal>
 
@@ -335,7 +335,7 @@ const Index = () => {
                   <div className="absolute top-1/2 left-1/2 w-full h-0.5 bg-gradient-to-r from-primary/50 to-transparent hidden lg:block -z-10"></div>
                 </div>
                 <h3 className="font-heading font-semibold text-base md:text-lg mb-2">Sourcing</h3>
-                <p className="text-xs md:text-sm text-muted-foreground">Direct from certified farms with quality checks</p>
+                <p className="text-xs md:text-sm text-muted-foreground">Direct from India's finest spice-growing regions</p>
               </div>
             </ScrollReveal>
 
@@ -347,8 +347,8 @@ const Index = () => {
                   </div>
                   <div className="absolute top-1/2 left-1/2 w-full h-0.5 bg-gradient-to-r from-primary/50 to-transparent hidden lg:block -z-10"></div>
                 </div>
-                <h3 className="font-heading font-semibold text-base md:text-lg mb-2">Processing</h3>
-                <p className="text-xs md:text-sm text-muted-foreground">Quality inspection and professional packaging</p>
+                <h3 className="font-heading font-semibold text-base md:text-lg mb-2">Cleaning & Grading</h3>
+                <p className="text-xs md:text-sm text-muted-foreground">Modern machinery for purity, color, and aroma grading</p>
               </div>
             </ScrollReveal>
 
@@ -360,8 +360,8 @@ const Index = () => {
                   </div>
                   <div className="absolute top-1/2 left-1/2 w-full h-0.5 bg-gradient-to-r from-primary/50 to-transparent hidden lg:block -z-10"></div>
                 </div>
-                <h3 className="font-heading font-semibold text-base md:text-lg mb-2">Cold Chain</h3>
-                <p className="text-xs md:text-sm text-muted-foreground">Temperature-controlled logistics network</p>
+                <h3 className="font-heading font-semibold text-base md:text-lg mb-2">Lab Testing</h3>
+                <p className="text-xs md:text-sm text-muted-foreground">EU MRL, Aflatoxin, and Microbiological compliance checks</p>
               </div>
             </ScrollReveal>
 
@@ -372,8 +372,8 @@ const Index = () => {
                     <span className="text-2xl md:text-3xl font-bold text-white">4</span>
                   </div>
                 </div>
-                <h3 className="font-heading font-semibold text-base md:text-lg mb-2">Delivery</h3>
-                <p className="text-xs md:text-sm text-muted-foreground">Timely delivery to global destinations</p>
+                <h3 className="font-heading font-semibold text-base md:text-lg mb-2">Export</h3>
+                <p className="text-xs md:text-sm text-muted-foreground">Timely delivery to European and global markets</p>
               </div>
             </ScrollReveal>
           </div>
@@ -392,10 +392,10 @@ const Index = () => {
                 <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs md:text-sm font-semibold mb-4 md:mb-6">
                   🤝 Let's Partner
                 </span>
-                <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 md:mb-4">Ready to Source Premium Vegetables?</h2>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 md:mb-4">Ready to Source Premium Indian Spices?</h2>
                 <p className="text-sm md:text-base lg:text-lg text-muted-foreground mx-auto mb-6 md:mb-8 max-w-2xl">
-                  Partner with FreshFields Global for reliable supply, competitive pricing,
-                  and world-class logistics support.
+                  Partner with NITARA GLOBAL for authentic Indian spices, full EU compliance,
+                  and reliable bulk export with every shipment.
                 </p>
                 <div className="flex flex-wrap justify-center gap-3 md:gap-4">
                   <Button asChild size="lg" className="px-6 md:px-8 shadow-lg shadow-primary/20 text-sm md:text-base">

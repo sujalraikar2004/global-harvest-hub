@@ -28,7 +28,7 @@ export const products: Product[] = [
     purity: "≥ 99%",
     moisture: "≤ 8%",
     availability: "Year-round",
-    image: "public/cumin1_1000x.webp",
+    image: "https://res.cloudinary.com/derz8ikfc/image/upload/v1772821736/s0nrce80drrcc5ytzb6p.webp",
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ export const products: Product[] = [
     purity: "≥ 98%",
     moisture: "≤ 9%",
     availability: "Year-round",
-    image: "public/coriender.webp",
+    image: "https://res.cloudinary.com/derz8ikfc/image/upload/v1772821731/geiry6escqbxe5hudoxs.webp",
   },
   {
     id: 3,
@@ -56,7 +56,7 @@ export const products: Product[] = [
     purity: "≥ 98%",
     moisture: "≤ 10%",
     availability: "Year-round",
-    image: "public/Turmeric-Whole.jpg",
+    image: "https://res.cloudinary.com/derz8ikfc/image/upload/v1772821785/x39yewxlyvjp27mjuyxz.jpg",
   },
   {
     id: 4,
@@ -70,7 +70,7 @@ export const products: Product[] = [
     purity: "≥ 98%",
     moisture: "≤ 10%",
     availability: "Year-round",
-    image: "public/turmeric_powder.jpg",
+    image: "https://res.cloudinary.com/derz8ikfc/image/upload/v1772821776/pypenkfgy0zidoe7u1i2.jpg",
   },
   {
     id: 5,
@@ -84,7 +84,7 @@ export const products: Product[] = [
     purity: "≥ 98%",
     moisture: "≤ 11%",
     availability: "Year-round",
-    image: "public/PaprikaPowder.webp",
+    image: "https://res.cloudinary.com/derz8ikfc/image/upload/v1772821767/puwrhlo6onycfutxzyby.webp",
   },
   {
     id: 6,
@@ -98,7 +98,7 @@ export const products: Product[] = [
     purity: "≥ 99%",
     moisture: "≤ 12%",
     availability: "Year-round",
-    image: "public/iStock-469858939.jpg",
+    image: "https://res.cloudinary.com/derz8ikfc/image/upload/v1772821757/farxyuxwpj2mdvmotto6.jpg",
   },
   {
     id: 7,
@@ -112,7 +112,7 @@ export const products: Product[] = [
     purity: "≥ 98%",
     moisture: "≤ 12%",
     availability: "Year-round",
-    image: "public/Cinnamon.jpg",
+    image: "https://res.cloudinary.com/derz8ikfc/image/upload/v1772821609/qt06st4caugecmklipj7.jpg",
   },
   {
     id: 8,
@@ -126,7 +126,7 @@ export const products: Product[] = [
     purity: "≥ 98%",
     moisture: "≤ 10%",
     availability: "Year-round",
-    image: "public/DryGinger.webp",
+    image: "https://res.cloudinary.com/derz8ikfc/image/upload/v1772821740/apaadkepvgsdzdbcyihm.webp",
   },
   {
     id: 9,
@@ -140,7 +140,7 @@ export const products: Product[] = [
     purity: "≥ 99%",
     moisture: "≤ 8%",
     availability: "Year-round",
-    image: "public/MustardSeeds.jpeg",
+    image: "https://res.cloudinary.com/derz8ikfc/image/upload/v1772821760/luvaqvlrqjzgshk0nhve.jpg",
   },
   {
     id: 10,
@@ -154,7 +154,7 @@ export const products: Product[] = [
     purity: "≥ 98%",
     moisture: "≤ 12%",
     availability: "Year-round",
-    image: "public/Dry Red Chili.jpg",
+    image: "https://res.cloudinary.com/derz8ikfc/image/upload/v1772821745/gomcb1owdbdy9ixsqeb1.jpg",
   },
 ];
 

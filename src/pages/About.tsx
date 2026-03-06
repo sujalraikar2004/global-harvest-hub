@@ -6,10 +6,11 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import aboutImage from "@/assets/about-warehouse.jpg";
 
 const milestones = [
-  { year: "2020", text: "NITARA GLOBAL founded by Disha Vinayak Hattikatti with a vision to export premium Indian spices to global markets." },
-  { year: "2022", text: "First European shipments dispatched — cumin, coriander, and turmeric to buyers in the UK and Netherlands." },
-  { year: "2023", text: "Expanded product range to 9 core spices; established accredited lab testing partnerships for EU MRL compliance." },
-  { year: "2024", text: "Serving 15+ countries with consistent bulk shipments and full EU food safety documentation support." },
+  { year: "2020", text: "NITARA GLOBAL founded by Disha Vinayak Hattikatti — a professional exporter of high-quality Indian spices, supplying premium agricultural products to European and international markets." },
+  { year: "2021", text: "Built strong sourcing networks across India's premier spice belts and invested in modern cleaning and grading systems to ensure consistency in aroma, color, flavor, and purity." },
+  { year: "2022", text: "First bulk shipments to European buyers — cumin, coriander, turmeric, and paprika — with full EU MRL compliance, Aflatoxin testing, and Certificate of Analysis (COA) support from accredited laboratories." },
+  { year: "2023", text: "Expanded core product range to 9 spices: Cumin Seeds, Coriander Seeds, Turmeric, Paprika Powder, Black Pepper, Cinnamon, Dry Ginger, Mustard Seeds, and Dry Red Chili." },
+  { year: "2024", text: "Established comprehensive export documentation support — including Phytosanitary Certificates, Certificate of Origin, EU MRL Compliance Reports, and private label packaging — serving 15+ countries worldwide." },
 ];
 
 const reasons = [

@@ -82,7 +82,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-sm opacity-70">
                 <Mail className="h-4 w-4 shrink-0" />
-                <span>Nitaraglobals@gmail.com</span>
+                <span>nitaraglobals@gmail.com</span>
               </li>
               <li className="flex items-center gap-3 text-sm opacity-70">
                 <ExternalLink className="h-4 w-4 shrink-0" />

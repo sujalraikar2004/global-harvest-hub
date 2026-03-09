@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, Flame } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -39,7 +39,13 @@ export default function Navbar() {
       <div className="container flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <Link to="/" className={`flex items-center gap-2 ${textColor}`}>
-          <Flame className="h-7 w-7 text-primary" />
+          <div className="bg-white rounded-xl p-1 shadow-md">
+            <img
+              src="https://res.cloudinary.com/derz8ikfc/image/upload/v1773038044/bqx0ohcwkwoyfu0o7uoz.jpg"
+              alt="Nitara Global Logo"
+              className="h-10 w-10 md:h-12 md:w-12 object-contain rounded-lg"
+            />
+          </div>
           <span className="text-xl font-heading font-bold">
             NITARA <span className="text-primary">GLOBAL</span>
           </span>
@@ -79,9 +85,15 @@ export default function Navbar() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="w-72">
-            <SheetTitle className="flex items-center gap-2 mb-6">
-              <Flame className="h-5 w-5 text-primary" />
-              <span className="font-heading font-bold">NITARA GLOBAL</span>
+            <SheetTitle className="flex items-center gap-3 mb-6">
+              <div className="bg-white rounded-xl p-1 shadow-sm border border-gray-100">
+                <img
+                  src="/logo.jpeg"
+                  alt="Nitara Global Logo"
+                  className="h-10 w-10 object-contain rounded-lg"
+                />
+              </div>
+              <span className="font-heading font-bold text-lg">NITARA GLOBAL</span>
             </SheetTitle>
             <nav className="flex flex-col gap-1">
               {navLinks.map((link) => (

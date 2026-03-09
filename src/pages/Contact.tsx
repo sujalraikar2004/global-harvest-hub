@@ -11,14 +11,14 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone / WhatsApp",
-    lines: ["+91 99001 68682"],
+    lines: ["+91 9900168682"],
     href: "https://wa.me/919900168682",
   },
   {
     icon: Mail,
     title: "Email",
-    lines: ["Nitaraglobals@gmail.com"],
-    href: "mailto:Nitaraglobals@gmail.com",
+    lines: ["nitaraglobals@gmail.com"],
+    href: "mailto:nitaraglobals@gmail.com",
   },
   {
     icon: Clock,
@@ -85,7 +85,7 @@ const Contact = () => {
                       <label className="text-sm font-medium mb-1.5 block">Full Name *</label>
                       <Input
                         required
-                        placeholder="John Smith"
+                        placeholder="Rakesh Kumar"
                         value={form.name}
                         onChange={update("name")}
                         maxLength={100}
@@ -96,7 +96,7 @@ const Contact = () => {
                       <Input
                         type="email"
                         required
-                        placeholder="john@company.com"
+                        placeholder="rakesh@gmail.com"
                         value={form.email}
                         onChange={update("email")}
                         maxLength={255}
@@ -107,7 +107,7 @@ const Contact = () => {
                     <label className="text-sm font-medium mb-1.5 block">Country *</label>
                     <Input
                       required
-                      placeholder="United Arab Emirates"
+                      placeholder="India"
                       value={form.country}
                       onChange={update("country")}
                       maxLength={100}

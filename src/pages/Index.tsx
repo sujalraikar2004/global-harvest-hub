@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { products } from "@/data/products";
-import heroImage from "@/assets/hero-vegetables.jpg";
+const heroImage = "https://res.cloudinary.com/derz8ikfc/image/upload/v1773038044/mfrbnnfkhbg7j5squgpj.jpg";
 import { motion } from "framer-motion";
 
 const trustBadges = [
@@ -51,7 +51,7 @@ const Index = () => {
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImage} alt="Premium Indian spices for export" className="w-full h-full object-cover object-center md:scale-105" />
+          <img src={heroImage} alt="Premium Indian spices for export" className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-r from-[hsl(150,30%,5%)]/95 via-[hsl(150,30%,8%)]/85 to-[hsl(150,30%,5%)]/70 md:to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-[hsl(150,30%,5%)]/80 via-[hsl(150,30%,5%)]/40 to-[hsl(150,30%,5%)]/50 md:via-transparent md:to-[hsl(150,30%,5%)]/30" />
         </div>
@@ -69,7 +69,7 @@ const Index = () => {
             >
               <span className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 rounded-full bg-primary/30 text-white text-xs md:text-sm font-semibold mb-4 md:mb-6 border border-primary/40 backdrop-blur-md">
                 <Sparkles className="h-3 w-3 md:h-3.5 md:w-3.5" />
-                Trusted Since 2020
+                Trusted Brand
               </span>
             </motion.div>
             <motion.h1

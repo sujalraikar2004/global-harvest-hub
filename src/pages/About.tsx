@@ -110,7 +110,7 @@ const About = () => (
     </section>
 
     {/* Timeline */}
-    <section className="section-padding bg-background">
+    {/* <section className="section-padding bg-background">
       <div className="container">
         <ScrollReveal className="text-center mb-16">
           <h2 className="section-title mb-4">Our Journey</h2>
@@ -137,10 +137,10 @@ const About = () => (
           ))}
         </div>
       </div>
-    </section>
+    </section> */}
 
     {/* Why Choose Us */}
-    <section className="section-padding gradient-green text-primary-foreground">
+    {/* <section className="section-padding gradient-green text-primary-foreground">
       <div className="container">
         <ScrollReveal className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose NITARA GLOBAL?</h2>
@@ -163,7 +163,7 @@ const About = () => (
           </Button>
         </ScrollReveal>
       </div>
-    </section>
+    </section> */}
   </Layout>
 );
 
